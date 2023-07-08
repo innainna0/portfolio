@@ -1,0 +1,221 @@
+body{
+    background-color: rgb(237, 237, 233);
+    font-family: 'Prata', serif; 
+    font-weight: 600;
+    margin: 1%;
+    
+}
+.container-fluid, .portfolio{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.navbar-brand:hover, .nav-link:hover, .linkedin:hover, 
+.facebook:hover, .instagram:hover, h1:hover, label:hover, 
+.h5:hover
+{
+    transform: scaleX(1.45)scaleY(1.45)
+}
+
+li{
+    list-style: none;   
+    margin-right: 10px; 
+}
+ul{
+    display: flex;
+}
+h1, h2, #intro, #enjoy{
+    text-shadow: 10px 10px 10px  grey;
+    
+}
+#header, .pay, .btn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 70px;
+}
+.representation{
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    }
+.swiper-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 70px;    
+    }
+#image, #logo {
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px  grey;
+    margin-right: 20px;
+}
+.navbar, .fitness{
+    box-shadow: 10px 10px 10px  rgba(216, 215, 215, 0.995);
+}
+.fitness{
+    border-radius: 15px;
+}
+#enjoy{
+    margin: 80px;
+    padding: 25px;
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px  rgba(4, 4, 4, 0.999);
+}
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex: 1;
+    position: relative;
+    margin: 10px;
+    align-items: center;
+}
+.project{
+    align-self: center;
+    position: absolute;
+    margin-top: 228px;
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contact, .section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    margin: 25px;
+    
+}
+label{
+    font-size: 20px;    
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+}
+
+.text-input{
+    background-color: rgb(242, 242, 231);
+    border: none;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: rgba(10, 10, 10, 0.22), rgba(237, 237, 233, 2);
+    margin-top: -5px;
+}
+
+.btn{
+    font-size: 25px;
+    color: aliceblue;
+    width: 400px;
+    margin: 20px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(rgb(250, 250, 248), rgb(5, 5, 5));
+}
+.btn:hover{
+    background: rgb(43, 43, 43);
+    color: white;
+}
+#intro{
+    font-size: 35px;
+    margin-top: 70px;
+    position: static;
+}
+.sectionAnim {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+  }
+  
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+    
+
+  
+
+  @media all and(max-width:500px){
+    html, body{
+        font-size: 10px;
+    }
+    
+    #header, #enjoy, .sectionAnim, .card, h1, h2.h3 .text, #intro .about{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .btn, .d-flex, .pic {
+        font-size:10px ;
+        width: 50%;
+  }
+    
+}
+.contact{
+    font-size: 15px;
+    margin: 20px;
+}
+  @media all and(max-width:800px){
+    html, body, .about{
+        font-size: 15px;
+    }
+    #header, #enjoy, .sectionAnim, .card, h1, h2.h3 .text, #intro, .about{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .btn, .d-flex {
+        font-size:10px ;
+        width: 50%;
+  }
+  
+
+.contact{
+    font-size: 15px;
+    margin: 20px;
+}
+  }
+  

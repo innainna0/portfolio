@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <title>Inna's Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Caveat:wght@600&family=EB+Garamond:wght@500&family=Prata&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg sticky-top bg-light">
+         <div class="container-fluid">
+            <img type="logo" id="logo" src="logo.jpg" width="38px">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#main">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="#portfolio">Porfolio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="#contact">Contact</a>
+                  </li>
+               </ul>
+               <span class="navbar-text">
+                  <ul class="social">
+                     <li class="linkedin">
+                        <a href="" title="Connect with me on Linkedin" target="_blank">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                           </svg>
+                     </li>
+                     <li class="facebook"><a href="" title="Like me on Facebook" target="_blank"></a><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                     </svg></li>
+                     <li class="instagram">
+                        <a href="" title="Follow me on Instagram" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                     </li>
+                  </ul>
+               </span>
+            </div>
+         </div>
+      </nav>
+      <div id="header">
+         <div class="representation">
+            <h2 id="main">
+               Hi! My name is </h1>
+               <h1 id="first">
+               Inna
+            </h2>
+            <p id="intro">I am a web developer</p>
+            <p id="par"></p>
+         </div>
+         <div class="representation">
+            <img id="image" src="IMG_Inna.PNG" alt="Inna" width="250px">
+         </div>
+      </div>
+      <div class="about">
+         <section class="sectionAnim">
+            <div class="bg"></div>
+            <p id="enjoy"> I enjoy creating beautiful design projects thought out to the last detail. I aspire to be one step ahed with the fashion in creation of exclusive web projects.</p>
+         </section>
+         <section class="sectionAnim">
+            <div class="bg"></div>
+            <p id="enjoy">My goal is to always build applications that are scalable and efficient while providing engaging, pixel-perfect user experiences.</p>
+         </section>
+         <section class="sectionAnim">
+            <div class="bg"></div>
+            <p id="enjoy">Here are a few tools that I’ve been working with recently:</p>
+         </section>
+      </div>
+      <section class="container py-5 my-2 my-md-4 my-lg-5">
+         <h1 class="h1 text-center pt-1 pt-xl-3 mb-lg-4"></h1>
+         <div class="swiper mx-n2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" data-swiper-options="{
+            &quot;slidesPerView&quot;: 1,
+            &quot;spaceBetween&quot;: 8,
+            &quot;pagination&quot;: {
+            &quot;el&quot;: &quot;.swiper-pagination&quot;,
+            &quot;clickable&quot;: true
+            },
+            &quot;breakpoints&quot;: {
+            &quot;500&quot;: {
+            &quot;slidesPerView&quot;: 2
+            },
+            &quot;800&quot;: {
+            &quot;slidesPerView&quot;: 3
+            },
+            &quot;1200&quot;: {
+            &quot;slidesPerView&quot;: 4
+            }
+            }
+            }">
+            <div id="skills">
+               <h1 class="h1 animPortfolio text-center pt-1 pt-xl-3 mb-lg-4"> Skills </h1>
+            </div>
+            <section>
+               <div class="swiper-wrapper" id="swiper-wrapper-abc38b99d97da534" aria-live="polite">
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto py-3 swiper-slide-active" role="group" aria-label="1 / 4" style="width: 320.5px; margin-right: 8px;">
+                     <div class="card h-100 card-body card-hover mx-2">
+                        <i class="bi bi-filetype-js text-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+                           </svg>
+                        </i>
+                        <h3 class="h5 pt-3 pb-1 mb-2 text-center">JavaScript</h3>
+                        <p class="mb-0"></p>
+                     </div>
+                  </div>
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto py-3 swiper-slide-next" role="group" aria-label="2 / 4" style="width: 320.5px; margin-right: 8px;">
+                     <div class="card h-100 card-body card-hover mx-2">
+                        <i class="bi bi-filetype-js text-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                           </svg>
+                        </i>
+                        <h3 class="h5 pt-3 pb-1 mb-2 text-center">HTML/CSS</h3>
+                        <p class="mb-0"></p>
+                     </div>
+                  </div>
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto py-3" role="group" aria-label="3 / 4" style="width: 320.5px; margin-right: 8px;">
+                     <div class="card h-100 card-body card-hover mx-2">
+                        <i class="bi bi-filetype-js text-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                              <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                              <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+                           </svg>
+                        </i>
+                        <h3 class="h5 pt-3 pb-1 mb-2 text-center">Bootstrap</h3>
+                        <p class="mb-0 text-center">Powerful, extensible, and feature-packed frontend toolkit. </p>
+                     </div>
+                  </div>
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto py-3" role="group" aria-label="4 / 4" style="width: 320.5px; margin-right: 8px;">
+                     <div class="card h-100 card-body card-hover mx-2">
+                        <i class="bi bi-filetype-js text-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill-gear" viewBox="0 0 16 16">
+                              <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.493 4.493 0 0 0 12.5 8a4.493 4.493 0 0 0-3.59 1.787A.498.498 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.476 4.476 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1V1Zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
+                              <path d="M11.886 9.46c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/>
+                           </svg>
+                        </i>
+                        <h3 class="h5 pt-3 pb-1 mb-2 text-center">GSAP</h3>
+                        <p class="mb-0 text-center">Professional-grade JavaScript animation for the modern web</p>
+                     </div>
+                  </div>
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto py-3" role="group" aria-label="4 / 4" style="width: 320.5px; margin-right: 8px;">
+                     <div class="card h-100 card-body card-hover mx-2">
+                        <i class="bi bi-filetype-js text-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-jsx" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.075 14.841a1.13 1.13 0 0 0 .401.823c.13.108.288.192.478.252.19.061.411.091.665.091.338 0 .624-.053.858-.158.237-.105.416-.252.54-.44a1.17 1.17 0 0 0 .187-.656c0-.224-.045-.41-.135-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.565-.21l-.621-.144a.97.97 0 0 1-.405-.176.37.37 0 0 1-.143-.299c0-.156.061-.284.184-.384.125-.101.296-.152.513-.152.143 0 .266.023.37.068a.624.624 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.199-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.552.05-.776.15-.225.099-.4.24-.528.421-.127.182-.19.395-.19.639 0 .201.04.376.123.524.082.149.199.27.351.367.153.095.332.167.54.213l.618.144c.207.049.36.113.462.193a.387.387 0 0 1 .153.326.512.512 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.224-.013-.32-.04a.837.837 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM0 14.791c0 .165.027.32.082.466.055.147.136.277.243.39.11.113.245.202.407.267.164.062.354.093.569.093.42 0 .748-.115.984-.346.238-.23.358-.565.358-1.004v-2.725h-.791v2.745c0 .201-.046.357-.138.466-.092.11-.233.164-.422.164a.499.499 0 0 1-.454-.246.576.576 0 0 1-.073-.27H0Zm8.907-2.859H9.8l-1.274 2.007L9.78 15.93h-.908l-.85-1.415h-.035l-.853 1.415h-.861l1.24-2.016-1.228-1.983h.931l.832 1.438h.036l.823-1.438Z"/>
+                           </svg>
+                        </i>
+                        <h3 class="h5 pt-3 pb-1 mb-2 text-center">React</h3>
+                        <p class="mb-0 text-center">The library for web and user interfaces</p>
+                     </div>
+                  </div>
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto py-3" role="group" aria-label="4 / 4" style="width: 320.5px; margin-right: 8px;">
+                     <div class="card h-100 card-body card-hover mx-2">
+                        <i class="bi bi-filetype-js text-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+                              <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362.798-.799.96-1.932.362-2.531-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532Z"/>
+                              <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9.42 9.42 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a9.556 9.556 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093.067.017.12.033.16.045.184.06.279.13.351.295l.029.073a3.475 3.475 0 0 1 .157.721c.055.485.051 1.178-.159 2.065Zm-4.828 7.475.04-.04-.107 1.081a1.536 1.536 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a8.548 8.548 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006ZM5.205 5c-.625.626-.94 1.351-1.004 2.09a8.497 8.497 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107-.04.039Zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a2.835 2.835 0 0 0-.045-.283 3.078 3.078 0 0 0-.3-.041Z"/>
+                              <path d="M7.009 12.139a7.632 7.632 0 0 1-1.804-1.352A7.568 7.568 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+                           </svg>
+                        </i>
+                        <h3 class="h5 pt-3 pb-1 mb-2 text-center">Figma</h3>
+                        <p class="mb-0 text-center">The colaborative interface design tool</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination position-relative d-xl-none pt-3 mt-4 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+               <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+         </div>
+         </section>
+         <div id="portfolio">
+            <h1 class="h1 animPortfolio text-center pt-1 pt-xl-3 mb-lg-4"> Portfolio </h1>
+         </div>
+         <div class="portfolio premium">
+            <div class="items premium">
+               <h3 class="project">Premium Fitness</h3>
+               <a href="http://fitness-premium-club.glitch.me/" target="_blank">
+               <img class="fitness"src="fitnes.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items premium">
+               <h3 class="project">Weather App</h3>
+               <a href="https://weather777.glitch.me/" target="_blank">
+               <img  class="fitness" src="Weather.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items guess">
+               <h3 class="project">Split A Bill</h3>
+               <a href="https://billaccordingincome.glitch.me/" target="_blank">
+               <img class="fitness" src="splitabill.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items guess">
+               <h3 class="project">Guess a number</h3>
+               <a href="https://guessthenumber777.glitch.me/" target="_blank">
+               <img class="fitness" src="guess.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items accounting">
+               <h3 class="project">Countdown</h3>
+               <a href="https://countdown777.glitch.me/" target="_blank">
+               <img class="fitness" src="Countdown.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items accounting">
+               <h3 class="project">Accounting</h3>
+               <a href="https://turpin-and-co.glitch.me/" target="_blank">
+               <img class="fitness" src="Accounting.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items photogr">
+               <h3 class="project">Furniture Store</h3>
+               <a href="https://furniturestore777.glitch.me/" target="_blank">
+               <img class="fitness" src="furniture.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items photogr">
+               <h3 class="project">Photography</h3>
+               <a href="http://it-photography.glitch.me/" target="_blank">
+               <img class="fitness" src="Photography.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items recipe">
+               <h3 class="project">Recipes</h3>
+               <a href="https://recipes777.glitch.me/" target="_blank">
+               <img class="fitness" src="recipes.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items recipe">
+               <h3 class="project">Predictions</h3>
+               <a href="http://predictions777.glitch.me/" target="_blank">
+               <img class="fitness" src="predictions.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items quiz">
+               <h3 class="project">Quiz</h3>
+               <a href="http://mathquiz777.glitch.me/" target="_blank">
+               <img class="fitness" src="quiz.jpg" width="400px" alt="">
+               </a>
+            </div>
+            <div class="items quiz">
+               <h3 class="project">To Do List</h3>
+               <a href="https://honeydolist.glitch.me/" target="_blank">
+               <img class="fitness" src="dolist.jpg" width="400px" alt="">
+               </a>
+            </div>
+         </div>
+         <div class="pay">
+            <button  class="btn"><a class="nav-link active"  href="https://calendly.com/innai197965/30min", target="_blank" type="submit">Schedule an appointment</a>
+            </button>
+         </div>
+         <div id="contact">
+            <div class="item text">
+               <h1  class="h1 text-center pt-1 pt-xl-3 mb-lg-4">Send me a message</h1>
+            </div>
+         </div>
+         <div class="portfolio">
+            <div class="items quiz">
+               <div class="pic">
+                  <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" width="500px" alt="">
+               </div>
+            </div>
+            <form class="items quiz" action="https://formspree.io/f/moqbkbgd" method="POST">
+               <input type="hidden name" hidden name="_language" value="en">
+               <div class="items text">
+                  <label for="fn" class="form-label">
+                  Your name:
+                  <input type="text" id="fn" class="form-control" name="yourName" placeholder="Please, enter your first name!" required=" ">
+                  </label>
+               </div>
+               <div class="items text">
+                  <label for="fn" class="form-label">
+                  Your email:
+                  <input id="fn" class="form-control" type="email" name="email" placeholder="Please, provide a valid email address!" required=" ">
+                  </label>
+               </div>
+               <div class="text">
+                  <label for="fn" class="form-label">
+                  Your phone:
+                  <input id="fn" class="form-control" type="phone" name="phone" placeholder="+_ ___ ___ __">
+                  </label>
+               </div>
+               <div class="text">
+                  <label for="fn" class="form-label">Your message:
+                  <textarea id="message" class="form-control" rows="3" placeholder="Please, enter your message!" required=" "></textarea>
+                  </label>
+               </div>
+               <div class="items text">
+                  <button class="btn" type="submit">Send a request</button>
+               </div>
+         </div>
+         </div>
+         </form>
+         <div class="pay">
+            <button  class="btn"><a class="nav-link active" href="https://buy.stripe.com/5kA29r2SpcGy97G3cc" target="_blank">Make a payment</a></button>
+         </div>
+      </section>
+      <div class="container">
+         <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+               <li class="nav-item"><a href="#main" class="nav-link px-2 text-muted">About</a></li>
+               <li class="nav-item"><a href="#portfolio" class="nav-link px-2 text-muted">Portfolio</a></li>
+               <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 IT, Inc</p>
+         </footer>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>       
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <script src="script.js"></script>    
+   </body>
+</html>
